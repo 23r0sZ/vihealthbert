@@ -31,9 +31,8 @@ def read_conll(path):
                     tmp_label.append('O')
                 if len(line) >= 2 and line[1] not in labels:
                     labels.append(line[1])
-    print(labels)
+    #print(labels)
     print(src[:5])
-    print(trg[:5])
     return src, trg
 
 
