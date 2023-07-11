@@ -4,6 +4,7 @@ def write_txt(data, path):
             f.write(item + '\n')
     return data
 
+
 def read_conll(path):
     src = []
     trg = []
@@ -30,17 +31,18 @@ def read_conll(path):
     return src, trg
 
 
-test_src, test_trg = read_conll('../data/vimq_word/test_word.conll')
-dev_src, dev_trg = read_conll('../data/vimq_word/dev_word.conll')
-tr_src, tr_trg = read_conll('../data/vimq_word/train_word.conll')
+test_src, test_trg = read_conll('../data/vinai_covid_word/test_word.conll')
+dev_src, dev_trg = read_conll('../data/vinai_covid_word/dev_word.conll')
+tr_src, tr_trg = read_conll('../data/vinai_covid_word/train_word.conll')
 
-write_txt(test_src, '../data/vimq_word/test/seq.in')
-write_txt(test_trg, '../data/vimq_word/test/seq.out')
-write_txt(dev_src, '../data/vimq_word/dev/seq.in')
-write_txt(dev_trg, '../data/vimq_word/dev/seq.out')
-write_txt(tr_src, '../data/vimq_word/seq.in')
-write_txt(tr_trg, '../data/vimq_word/train/seq.out')
+write_txt(test_src, '../data/vinai_covid_word/test/seq.in')
+write_txt(test_trg, '../data/vinai_covid_word/test/seq.out')
+write_txt(dev_src, '../data/vinai_covid_word/dev/seq.in')
+write_txt(dev_trg, '../data/vinai_covid_word/dev/seq.out')
+write_txt(tr_src, '../data/vinai_covid_word/train/seq.in')
+write_txt(tr_trg, '../data/vinai_covid_word/train/seq.out')
 
-a = ['O', 'B-drug', 'I-drug', 'B-medical_procedure', 'I-medical_procedure', 'B-SYMPTOM_AND_DISEASE', 'I-SYMPTOM_AND_DISEASE']
-write_txt(a, 'data/vimq_word/slot_labels.txt')
+a = ['O', 'B-DATE', 'I-DATE', 'B-NAME', 'B-AGE', 'B-LOCATION', 'I-LOCATION', 'B-JOB', 'I-JOB', 'B-ORGANIZATION', 'I-ORGANIZATION', 'B-PATIENT_ID',
+    'B-SYMPTOM_AND_DISEASE', 'I-SYMPTOM_AND_DISEASE', 'B-GENDER', 'B-TRANSPORTATION', 'I-TRANSPORTATION', 'I-NAME', 'I-PATIENT_ID', 'I-AGE', 'I-GENDER']
+write_txt(a, 'data/vinai_covid_word/slot_labels.txt')
 
