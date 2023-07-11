@@ -48,5 +48,5 @@ write_txt(tr_trg, '../data/vinai_covid_word/train/seq.out')
 
 a = ['O', 'B-DATE', 'I-DATE', 'B-NAME', 'B-AGE', 'B-LOCATION', 'I-LOCATION', 'B-JOB', 'I-JOB', 'B-ORGANIZATION', 'I-ORGANIZATION', 'B-PATIENT_ID',
     'B-SYMPTOM_AND_DISEASE', 'I-SYMPTOM_AND_DISEASE', 'B-GENDER', 'B-TRANSPORTATION', 'I-TRANSPORTATION', 'I-NAME', 'I-PATIENT_ID', 'I-AGE', 'I-GENDER']
-write_txt(a, 'data/vinai_covid_word/slot_labels.txt')
+write_txt(a, 'data/slot_labels.txt')
 
