@@ -18,7 +18,7 @@ MODEL_CLASSES = {
 
 MODEL_PATH_MAP = {
     "vihnbert": "demdecuong/vihealthbert-base-word",
-    "phobert": "vinai/phobert-base"
+    "phobert": "manhtt-079/vipubmed-deberta-base"
 }
 
 def get_slot_labels(args):
