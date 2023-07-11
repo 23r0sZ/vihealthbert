@@ -1,4 +1,8 @@
+import os
 def write_txt(data, path):
+    dir_path = os.path.dirname(path)
+    os.makedirs(dir_path, exist_ok=True)
+
     with open(path, 'w') as f:
         for item in data:
             f.write(item + '\n')
