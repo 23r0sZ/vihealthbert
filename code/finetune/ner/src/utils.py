@@ -17,7 +17,7 @@ MODEL_CLASSES = {
 }
 
 MODEL_PATH_MAP = {
-    "vihnbert": "demdecuong/vihealthbert-base-word",
+    "vihnbert": "manhtt-079/vipubmed-deberta-base",
     "phobert": "manhtt-079/vipubmed-deberta-base"
 }
 
